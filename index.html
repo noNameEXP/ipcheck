@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IP & VPN Checker</title>
+  <style>
+    body { font-family: sans-serif; background:#111; color:#eee; padding:20px; }
+    input { padding:8px; width:250px; }
+    button { padding:8px 12px; margin-left:5px; }
+    pre { background:#222; padding:15px; border-radius:8px; overflow-x:auto; }
+  </style>
+</head>
+<body>
+
+  <h1>Your IP & VPN Info</h1>
+  <pre id="self"></pre>
+
+  <h2>Check Another IP</h2>
+  <input id="ipInput" placeholder="Enter IP address">
+  <button onclick="lookupOtherIP()">Check</button>
+
+  <pre id="other"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
