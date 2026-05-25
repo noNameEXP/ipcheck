@@ -1,7 +1,6 @@
 // Fetch info for the visitor's own IP
 async function fetchSelfIP() {
-  const url = "http://ip-api.com/json/?fields=66846719"; 
-  // 66846719 = all fields including proxy, isp, as, city, etc.
+  const url = "https://ipapi.co/json/";
 
   const res = await fetch(url);
   const data = await res.json();
@@ -15,7 +14,7 @@ async function lookupOtherIP() {
   const ip = document.getElementById("ipInput").value.trim();
   if (!ip) return;
 
-  const url = `http://ip-api.com/json/${ip}?fields=66846719`;
+  const url = `https://ipapi.co/${ip}/json/`;
 
   const res = await fetch(url);
   const data = await res.json();
